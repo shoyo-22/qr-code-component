@@ -30,23 +30,29 @@
     />
   </head>
   <body>
-    <main>
-      <div class="card">
+    <main role="main">
+      <article class="card" role="article" aria-labelledby="card-title">
         <div class="card__container">
-          <div class="card__qr-container">
-            <img src="./assets/QR.svg" alt="QR Code" />
-          </div>
+          <figure class="card__qr-container">
+            <img
+              src="./assets/QR.svg"
+              alt="QR Code to Frontend Mentor website"
+              loading="eager"
+              decoding="async"
+              class="card__qr-image"
+            />
+          </figure>
           <div class="card__content">
-            <h2 class="card__title">
+            <h1 id="card-title" class="card__title">
               Improve your front-end skills by building projects
-            </h2>
+            </h1>
             <p class="card__description">
               Scan the QR code to visit Frontend Mentor and take your coding
               skills to the next level
             </p>
           </div>
         </div>
-      </div>
+      </article>
     </main>
   </body>
 </html>
